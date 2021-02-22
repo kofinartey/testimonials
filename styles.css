@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 70%;
+    /* height: 60vh; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.comment{
+    margin: 0.7em;
+    padding: 1.5em;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 0.5em;
+    color: white;
+    font-weight: 400;
+
+}
+
+.comment img{
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 2em;
+    position: relative;
+}
+.comment .heading {
+    /* color: white; */
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-top: -0.6em;
+    margin-bottom: 1em;
+}
+.comment .details{
+    font-size: 0.8em;
+    line-height: 1.5em;
+    opacity: 70%;
+}
+.comment div:nth-of-type(2){
+    position: relative;
+    left: 50px;
+    top: -35px;
+}
+.comment .name {
+    font-weight: 600;
+    font-size: .8em;
+}
+.comment .status{
+    font-size:0.7em;
+    opacity: 50%;
+}
+
+
+.daniel{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-position: 80% 0;
+    background-repeat: no-repeat;
+    background-color: hsl(263, 55%, 52%);
+}
+.daniel img{
+    border: 2px solid rgba(255, 255, 255, 50%);
+}
+
+
+.jonathan{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.jeanette{
+    grid-column:1/2;
+    grid-row: 2/3;
+    background-color: white;
+    color: hsl(217, 19%, 35%);
+}
+.patrick{
+    grid-column:2/4;
+    grid-row: 2/3;
+    background-color: hsl(219, 29%, 14%);
+}
+.patrick img{
+    border: 2px solid #7541c8;
+}
+.kira {
+    grid-column:4/5;
+    grid-row:1/3;
+    background-color: white;
+    color: hsl(217, 19%, 35%);
+}
+
+
+
+
+@media(max-width:1200px){
+    main{
+        width:100%;
+        padding: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .daniel{
+        grid-column: 1/3;
+        grid-row:1/2;
+    }
+    .jonathan{
+        grid-column: 3/4;
+        grid-row:1/2;
+    }
+    .jeanette{
+        grid-column:1/2;
+        grid-row: 2/3;
+    }
+    .patrick{
+        grid-column:2/4;
+        grid-row: 2/3;
+    }
+    .kira {
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+
+}
+@media (max-width:500px){
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .comment{
+        padding: 2em;
+    }
+
+    .comment .heading{
+        font-weight: 600;
+        font-size: 1.3em;
+    }
+    .comment .details{
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
